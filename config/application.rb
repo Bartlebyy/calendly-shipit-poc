@@ -26,7 +26,6 @@ module Shipit
 
     config.active_job.queue_adapter = :sidekiq
     config.cache_store = :redis_cache_store, { url: ENV['REDIS_URL'] }
-    config.assets.initialize_on_precompile = false
     config.active_record.cache_versioning = false
 
     # Settings in config/environments/* take precedence over those specified here.
