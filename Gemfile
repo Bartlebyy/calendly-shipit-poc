@@ -46,7 +46,7 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'redis-rails'
-gem 'shipit-engine'
+gem 'shipit-engine', '0.31.0'
 gem 'sidekiq'
 group :production do
   gem 'pg'
