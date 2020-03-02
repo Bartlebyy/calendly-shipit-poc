@@ -45,7 +45,7 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'redis-rails'
-gem 'shipit-engine', '0.31.0'
+gem 'shipit-engine', git: 'git://github.com/Shopify/shipit-engine.git', ref: '674f030'
 gem 'sidekiq'
 group :production do
   gem 'pg'
