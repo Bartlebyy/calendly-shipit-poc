@@ -7,7 +7,7 @@ module Shipit
         iss: app_id
       }
       Rails.logger.warn "GithubApp config: #{@config}"
-      key = OpenSSL::PKey::RSA.new(private_key)
+      key = OpenSSL::PKey::RSA.new(ENV['RSA_PRIVATE_KEY'])
       JWT.encode(payload, key, 'RS256')
     end
   end
