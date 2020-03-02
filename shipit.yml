@@ -1,3 +1,5 @@
 deploy:
+  pre:
+    - gem install dpl
   override:
-    - ./script/deploy.rb
+    - dpl --provider --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY
