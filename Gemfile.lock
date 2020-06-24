@@ -207,8 +207,8 @@ GEM
     pubsubstub (0.2.0)
       rack
       redis (~> 4.0)
-    puma (3.12.3)
-    rack (2.2.2)
+    puma (3.12.6)
+    rack (2.2.3)
     rack-protection (2.0.8.1)
       rack
     rack-proxy (0.6.5)
